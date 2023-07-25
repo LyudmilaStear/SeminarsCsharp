@@ -14,7 +14,7 @@ namespace SeminarsCsharp.Seminar1
     /// </summary>
     public static class p1Theory
     {
-        public static Launch()
+        public static void Launch()
         {
             //SeminarC# 1
             //Theory

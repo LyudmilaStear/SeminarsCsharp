@@ -6,8 +6,8 @@ namespace SeminarsCsharp
     {
         static void Main(string[] args)
         {
-            p1Theory.Launch();
-
+            //p1Theory.Launch();
+            p2Task1.launch();
         }
     }
 }
