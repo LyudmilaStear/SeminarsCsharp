@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeminarsCsharp.Seminar1
+namespace SeminarsCsharp.Seminars
 {
     /// <summary>
     /// имя переменной всегда пишется с маленькой буквы
@@ -31,12 +31,15 @@ namespace SeminarsCsharp.Seminar1
             string stringText = "some text";
             bool logicVar = false;
             bool logicVar2 = true;
-            
+            */
+
             int num1 = 9;
             int num2 = 10;
             Console.WriteLine("My numbers are " + num1 + " and " + num2 + " and it is good!");
             Console.WriteLine($"My numbers are {num1} and {num2} and it is good!");
             
+            
+            /*
             Где то здесь ошибка:
             int num3 = New Random().Next(0, 101);
             Console.WriteLine("My secondNumber is " + num3);

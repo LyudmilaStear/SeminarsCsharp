@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeminarsCsharp.Seminar1
+namespace SeminarsCsharp.Seminars
 {
-    public static  class p2Task1
+    public static  class S1p2Task1
     {
         public static void launch()
         {

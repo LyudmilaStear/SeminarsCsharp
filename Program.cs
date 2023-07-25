@@ -1,4 +1,4 @@
-﻿using SeminarsCsharp.Seminar1;
+﻿using SeminarsCsharp.Seminars;
 
 namespace SeminarsCsharp
 {
@@ -6,9 +6,14 @@ namespace SeminarsCsharp
     {
         static void Main(string[] args)
         {
-            //p1Theory.Launch();
-            //p2Task1.Launch();
-            p2Task2.Launch();
+            //S1p1Theory.Launch();
+            //S1p2Task1.Launch();
+            //S1p2Task2.Launch();
+            //S2p1Theory.Launch();
+            //S2p2Task1.Launch();
+            //S2p2Task2.Launch();
+            //S2p2Task3.Launch();
+            S2p2Task4.Launch();
         }
     }
 }
