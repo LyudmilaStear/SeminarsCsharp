@@ -40,8 +40,7 @@ namespace SeminarsCsharp.Homework
                 {
                     maxNum = num3;
                 }
-                else maxNum = num1;
-               
+                            
                 return maxNum;
             }
             
