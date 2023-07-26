@@ -1,4 +1,5 @@
-﻿using SeminarsCsharp.Seminars;
+﻿using SeminarsCsharp.Homework;
+using SeminarsCsharp.Seminars;
 
 namespace SeminarsCsharp
 {
@@ -13,7 +14,9 @@ namespace SeminarsCsharp
             //S2p2Task1.Launch();
             //S2p2Task2.Launch();
             //S2p2Task3.Launch();
-            S2p2Task4.Launch();
+            //S2p2Task4.Launch();
+
+            HWforSem1.Launch();
         }
     }
 }
