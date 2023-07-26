@@ -16,8 +16,9 @@ namespace SeminarsCsharp
             //S2p2Task3.Launch();
             //S2p2Task4.Launch();
 
-            HWforSem1.Launch();
-            //HWforSem2.Launch();
+            //HWforSem1.Launch();
+            
+            HWforSem2.Launch();
         }
     }
 }
