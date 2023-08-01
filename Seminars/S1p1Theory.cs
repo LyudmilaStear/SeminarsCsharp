@@ -24,7 +24,7 @@ namespace SeminarsCsharp.Seminars
             INT - целое число. любое. Можно написать сразу со значением. а можно оставить просто "место" под нее `int varA;`
             double - дробное число
             string
-            bool
+            bool 
            
             int intNumber = 25;
             double doubleNumber = 12.12;

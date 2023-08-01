@@ -119,7 +119,6 @@ namespace SeminarsCsharp.Seminars
             }
 
             Console.WriteLine("Input x1: ");
-
             double x1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Input y1: ");
             double y1 = Convert.ToDouble(Console.ReadLine());
