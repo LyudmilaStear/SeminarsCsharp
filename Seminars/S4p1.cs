@@ -73,7 +73,6 @@ namespace SeminarsCsharp.Seminars
                 return result;
             }
             Console.WriteLine("Enter a number: ");
-
             int nunumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Prov(nunumber));
             */
@@ -85,6 +84,30 @@ namespace SeminarsCsharp.Seminars
 
             //вар.1. пользователь вводит данные.
 
+            int[] EnterNewArray(int size) //, int minValue, int maxValue)
+            {
+                
+                int[] array = new int[size]; //выделение памяти: тип(инт), название и new int[размер массива]. инициализвция рабочей переменной, существующей только внутри цикла. в случае с массивами - это переменная индекса. 
+                for (int i = 0; i < size; i++) // Первый блок может и отсутствовать, НО! его точку с запятой в начале оставляем.
+                {
+                    Console.WriteLine($"Введите элемент массива под индексом {i}");
+                    array[i] = Convert.ToInt32(Console.ReadLine());                           //второй блок - это логическое условие существования цикла(то что в while пишем обычно. 
+                }                           // Третий блок - это процесс направленный на изменение рабочей пременной. Блоки можно расширять через запятую.
+                return array;
+            }
+
+            void WriteArray(int[] array)
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.Write(array[i] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("Введите размер массива: ");
+            int size1 = Convert.ToInt32(Console.ReadLine());
+            int[] array = EnterNewArray(size1);
+            WriteArray(array);
 
             //вар.2. Генерация рандомными числами.
 
@@ -109,7 +132,7 @@ namespace SeminarsCsharp.Seminars
                 Console.WriteLine();
             */
 
-            int[] CreateRandomArray(int size, int minValue, int maxValue)
+            /*int[] CreateRandomArray(int size, int minValue, int maxValue)
             {
                 int[] array = new int[size]; //выделение памяти: тип(инт), название и new int[размер массива]. инициализвция рабочей переменной, существующей только внутри цикла. в случае с массивами - это переменная индекса. 
                 for(int i = 0; i < size; i++) // Первый блок может и отсутствовать, НО! его точку с запятой в начале оставляем.
@@ -137,6 +160,7 @@ namespace SeminarsCsharp.Seminars
 
             int[] myArray = CreateRandomArray(length, minValue, maxValue);
             WriteArray(myArray);
+            */
         }
     }
 }

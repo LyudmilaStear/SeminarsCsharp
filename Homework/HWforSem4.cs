@@ -119,7 +119,7 @@ namespace SeminarsCsharp.Homework
             //1, 2, 5, 7, 19-> [1, 2, 5, 7, 19]
             //6, 1, 33-> [6, 1, 33]
 
-            int[] CreateRandomArray(int m, int minValue, int maxValue)
+            /* int[] CreateRandomArray(int m, int minValue, int maxValue)
             {
                 int[] array = new int[m]; //выделение памяти: тип(инт), название и new int[размер массива]. инициализвция рабочей переменной, существующей только внутри цикла. в случае с массивами - это переменная индекса. 
                 for (int i = 0; i < m; i++) // Первый блок может и отсутствовать, НО! его точку с запятой в начале оставляем.
@@ -147,8 +147,37 @@ namespace SeminarsCsharp.Homework
 
             int[] userArray = CreateRandomArray(length, minValue, maxValue);
             WriteArray(userArray); 
+            */
 
 
+            //генерируем одномерный массив. методы.
+
+            //пользователь вводит данные.
+
+            int[] EnterNewArray(int size) //, int minValue, int maxValue)
+            {
+
+                int[] array = new int[size]; //выделение памяти: тип(инт), название и new int[размер массива]. инициализвция рабочей переменной, существующей только внутри цикла. в случае с массивами - это переменная индекса. 
+                for (int i = 0; i < size; i++) // Первый блок может и отсутствовать, НО! его точку с запятой в начале оставляем.
+                {
+                    Console.WriteLine($"Введите элемент массива под индексом {i}");
+                    array[i] = Convert.ToInt32(Console.ReadLine());                           //второй блок - это логическое условие существования цикла(то что в while пишем обычно. 
+                }                           // Третий блок - это процесс направленный на изменение рабочей пременной. Блоки можно расширять через запятую.
+                return array;
+            }
+
+            void WriteArray(int[] array)
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.Write(array[i] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("Введите размер массива: ");
+            int size1 = Convert.ToInt32(Console.ReadLine());
+            int[] array = EnterNewArray(size1);
+            WriteArray(array);
 
         }
     }
