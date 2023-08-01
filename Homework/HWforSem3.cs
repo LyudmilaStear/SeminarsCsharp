@@ -66,31 +66,7 @@ namespace SeminarsCsharp.Homework
             Polindrom(numb);
             */
 
-
-            // not working
-             void Polindrom(int num)
-            {
-                int revNum = 0;
-
-                while (num > 0)
-                {
-                    num = num / 10;
-                    revNum = revNum + num % 10;
-                    revNum = revNum * 10;
-                }
-                //revNum = revNum / 10;
-
-                if (revNum == num) Console.WriteLine($"{num} is Pulindrom");
-                else Console.WriteLine($"{num} is not Pulindrom");
-            }
-            Console.WriteLine("Введите число для проверки на полиндромность: ");
-            int numb = Convert.ToInt32(Console.ReadLine());
-
-            Polindrom(numb);
-            
-
-
-            /* решение с "хаками" от друга вар1:
+            /* решение с "хаками" от друга вар1(для себя, чтобы знать, что и так бывает):
             Console.WriteLine("Введите число для проверки на полиндромность: ");
             var x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(new string(x.ToString().Reverse().ToArray()) == x.ToString());
@@ -102,39 +78,36 @@ namespace SeminarsCsharp.Homework
             Console.WriteLine(isPolyndrom ? $"{x} is Polyndrom" : $"{x} is not Polyndrom" );
             */
 
-            /*
-            bool NumPulindrom(int num)
+            
+            /* альтернативное решение с массивами. Сама 100%.
+             * void NumPulindrom(string num)
             {
-                string numb = Convert.ToString(num);
-                int numbLength = numb.Length;
-                int i = 0;
-                if (numbLength > 0) //&& numbLength % 2 != 0)
+                //string numb = Convert.ToString(num);
+                int numLength = num.Length;
+                int index = 0;
+             
+                int leftDigit = num[index];
+                int rightDigit = num[numLength - 1];
+                if (leftDigit == rightDigit && num.Length > 1)
                 {
-                    while (i < numbLength / 2)
+                    while (index < numLength / 2)
                     {
-                        int leftDigit = numb[i];
-                        int rightDigit = numb[numbLength];
-                        if (leftDigit == rightDigit)
-                        {
-                            i++;
-                            numbLength = numbLength - 1;
-                            return true;
-                        }
-                        else return false; // Console.WriteLine($"{num} is not a Pulindrom");
+                        index++;
+                        numLength--;
                     }
+                    Console.WriteLine($"{num} is a Pulindrom");
                 }
-                else return false;            
-
+                else Console.WriteLine($"{num} is not a Pulindrom");
             }
                 Console.WriteLine("Enter a number: ");
-               int x = Convert.ToInt32(Console.ReadLine());
-                            
-               Console.WriteLine(pulindrom);
+                string x = Console.ReadLine();
+                NumPulindrom(x);
             */
+            
 
 
-
-            /*Console.WriteLine("Введите число: ");
+            /* альт решение только для 5и значных
+            Console.WriteLine("Введите число: ");
             string number = Console.ReadLine();
             int len = number.Length;
 
