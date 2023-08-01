@@ -106,7 +106,7 @@ namespace SeminarsCsharp.Homework
             
 
 
-            /* альт решение только для 5и значных
+            /* альт решение только для 5и значных, без метода.
             Console.WriteLine("Введите число: ");
             string number = Console.ReadLine();
             int len = number.Length;
