@@ -128,7 +128,7 @@ namespace SeminarsCsharp.Seminars
                 Console.WriteLine();
             }
 
-            Console.Write("Enter a iength of an array: ");
+            Console.Write("Enter a length of an array: ");
             int length = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the min possible value: ");
             int minValue = Convert.ToInt32(Console.ReadLine());
