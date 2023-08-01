@@ -84,8 +84,7 @@ namespace SeminarsCsharp.Homework
             //9012-> 12
 
             /* int SumDigits (int num)
-            {
-                //int length = num.Length;
+            {          
                 int result = 0;
                 for (int i = 0; num > 0; i++)
                 {
@@ -96,7 +95,7 @@ namespace SeminarsCsharp.Homework
             }
             */
 
-            /* Не работает. Не разобралась пока как строка массив и индексы и их сложение здесь работает.
+            /* Не работает. Не разобралась пока как строка массив, и индексы и их сложение здесь работает.
              * 
              int SumDigits(string num)
             {
