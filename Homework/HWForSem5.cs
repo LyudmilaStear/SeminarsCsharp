@@ -69,40 +69,41 @@ namespace SeminarsCsharp.Homework
             {
                 int[] myArray = CreateRandomArray(length, minValue, maxValue);
                 WriteArray(myArray);
-                Console.WriteLine("Quantity even numbers is " + EventNum(myArray));
+                Console.WriteLine("Quantity of even numbers is " + EventNum(myArray));
             }
             */
 
 
-            // Вариант 2. 
-            int[] CreateRandomArray(int size, int minValue, int maxValue)
+            // Вариант 2. Тут интереснее) Если возможно - программа создает массив только из 3х значных чисел. Если нет - пишет ошибку.
+            /*int[] CreateRandomArray(int size, int minValue, int maxValue)
             {
                 int[] array = new int[size];
-                int i = 0;
+
                 int count = 0;
-                while (i < size)
-                {
+               
+               for (int i = 0;  i < size; i++)
+               {
                     array[i] = new Random().Next(minValue, maxValue + 1);
                     if (array[i] > 99 && array[i] < 1000)
-                    {
-                        i++;
+                    {                        
                         count++;
                     }
-                }
-                if (count > 0) return array;
-                else
-                {
-                    Console.WriteLine("Array should contain only tree digit numbers. Wrong min and/or max volumes"); 
-                    int[] arrWrong = { 0, 0 };
-                    return arrWrong;
-                }
+               }
+               if (count > 0) return array;
+               else
+               {
+                    Console.WriteLine("Array should contain only tree digit numbers. Wrong min and/or max volumes");
+                    int[] wrAr = new int[0];
+                    return wrAr;
+               }
+
             }
 
-            void WriteArray(int[] array)
+            void WriteArray(int[] array1)
             {
-                for (int i = 0; i < array.Length; i++)
+                for (int i = 0; i < array1.Length; i++)
                 {
-                    Console.Write(array[i] + " ");
+                    Console.Write(array1[i] + " ");
                 }
                 Console.WriteLine();
             }
@@ -117,7 +118,7 @@ namespace SeminarsCsharp.Homework
                 return count;
             }
 
-                Console.Write("Enter a length of an array: ");
+            Console.Write("Enter a length of an array: ");
             int length = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the min possible value(>99): ");
             int minValue = Convert.ToInt32(Console.ReadLine());
@@ -127,7 +128,8 @@ namespace SeminarsCsharp.Homework
             int[] myArray = CreateRandomArray(length, minValue, maxValue);
             WriteArray(myArray);
 
-            Console.WriteLine("Quantity even numbers is " + EventNum(myArray));
+            Console.WriteLine("Quantity of even numbers is " + EventNum(myArray));
+            */
 
             //Задача 36: Задайте одномерный массив, заполненный случайными числами.Найдите сумму элементов, стоящих на нечётных позициях.
             //[3, 7, 23, 12] -> 19
