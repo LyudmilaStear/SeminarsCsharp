@@ -79,8 +79,8 @@ namespace SeminarsCsharp.Homework
             */
 
             
-            /* альтернативное решение с массивами. Сама 100%.
-             void NumPulindrom(string num)
+            // альтернативное решение с массивами. Сама 100%.
+            /* void NumPulindrom(string num)
             {
                 //string numb = Convert.ToString(num);
                 int numLength = num.Length;
