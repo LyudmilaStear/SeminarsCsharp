@@ -135,14 +135,120 @@ namespace SeminarsCsharp.Homework
             //[3, 7, 23, 12] -> 19
             //[-4, -6, 89, 6]-> 0
 
+            /*int[] CreateRandomArray(int size, int minValue, int maxValue)
+            {
+                int[] array = new int[size];
+                for (int i = 0; i < size; i++)
+                {
+                    array[i] = new Random().Next(minValue, maxValue + 1);
+                }
+                return array;
+            }
+
+            void WriteArray(int[] array)
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.Write(array[i] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            int SumOddPositions (int[] array)
+            {
+                int sum = 0;
+                for (int i = 0; i < array.Length; i +=2) sum +=array[i];
+                return sum;
+            }
+
+            Console.Write("Enter a length of an array: ");
+            int length = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the min possible value: ");
+            int minValue = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the max possible value: ");
+            int maxValue = Convert.ToInt32(Console.ReadLine());
 
 
+            int[] myArray = CreateRandomArray(length, minValue, maxValue);
+            WriteArray(myArray);
+            Console.WriteLine(SumOddPositions(myArray));
+            */
 
             //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
             //[3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
 
+            int[] CreateRandomArray(int size, int minValue, int maxValue)
+            {
+                int[] array = new int[size];
+                for (int i = 0; i < size; i++)
+                {
+                    array[i] = new Random().Next(minValue, maxValue + 1);
+                }
+                return array;
+            }
+
+            void WriteArray(int[] array)
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.Write(array[i] + " ");
+                }
+                Console.WriteLine();
+            }
 
 
+            int FindMaxMinusMin(int[] array)
+            {
+                
+                int FindMax(int[] array)
+                {
+                    int i = 1;
+                    int maxN = array[0];
+                    while (i < array.Length)
+                    {
+                        if (array[i] > maxN)
+                        {
+                            maxN = array[i];
+                            i++;
+                        }
+                        else i++;                    
+                    }
+                    return maxN;
+                }
+                
+                
+                int FindMin(int[] array)
+                {
+                    int i = 1;
+                    int minN = array[0];
+                    while (i < array.Length)
+                    {
+                        if (array[i] < minN)
+                        {
+                            minN = array[i];
+                            i++;
+                        }
+                        else i++;
+                    }
+                    return minN;
+
+                }
+
+                int maxMinMin = FindMax(array) - FindMin(array);
+                return maxMinMin;
+            }
+
+            Console.Write("Enter a length of an array: ");
+            int length = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the min possible value: ");
+            int minValue = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the max possible value: ");
+            int maxValue = Convert.ToInt32(Console.ReadLine());
+
+            int[] myArray = CreateRandomArray(length, minValue, maxValue);
+            WriteArray(myArray);
+
+            Console.WriteLine(FindMaxMinusMin(myArray));
         }
     }
 }

@@ -60,8 +60,9 @@ namespace SeminarsCsharp.Homework
             Console.WriteLine("A в степени B равно " + PoverNumAInB(base1, pow1));
             */
 
-            /* var2.
-             void  PoverNumAInB (int a, int b)
+            //var2.
+             
+            /*void  PoverNumAInB (int a, int b)
             {
                 if (b > 0)
                 {
@@ -77,6 +78,7 @@ namespace SeminarsCsharp.Homework
 
             PoverNumAInB(base1, pow1);
             */
+            
 
             //==== Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
             //452-> 11
@@ -97,7 +99,7 @@ namespace SeminarsCsharp.Homework
 
             /* Не работает. Не разобралась пока как строка массив, и индексы и их сложение здесь работает.
              */ 
-             int SumDigits(string num)
+             /*int SumDigits(string num)
             {
                 //int[] num = { num1 }; 
                 int length = num.Length;
@@ -112,7 +114,7 @@ namespace SeminarsCsharp.Homework
             Console.WriteLine("Введите число: ");
             string numb = Console.ReadLine();
             int sum = SumDigits (numb);
-            Console.WriteLine(sum);
+            Console.WriteLine(sum);*/
             
 
             //==== Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
