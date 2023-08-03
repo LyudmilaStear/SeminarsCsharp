@@ -24,7 +24,10 @@ namespace SeminarsCsharp
 
             //S3p1Task1.Launch();
 
-            S4p1.Launch();
+            //S4p1.Launch();
+
+            //S5p1.Launch();
+            S5p2.Launch();
 
             //Serg1.Launch();
 

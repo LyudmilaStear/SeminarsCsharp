@@ -96,7 +96,7 @@ namespace SeminarsCsharp.Homework
             */
 
             /* Не работает. Не разобралась пока как строка массив, и индексы и их сложение здесь работает.
-             * 
+             */ 
              int SumDigits(string num)
             {
                 //int[] num = { num1 }; 
@@ -113,7 +113,7 @@ namespace SeminarsCsharp.Homework
             string numb = Console.ReadLine();
             int sum = SumDigits (numb);
             Console.WriteLine(sum);
-            */
+            
 
             //==== Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
             //1, 2, 5, 7, 19-> [1, 2, 5, 7, 19]
@@ -154,13 +154,13 @@ namespace SeminarsCsharp.Homework
 
             //пользователь вводит данные.
 
-            int[] EnterNewArray(int size) //, int minValue, int maxValue)
+            /* int[] EnterNewArray(int size) //, int minValue, int maxValue)
             {
 
                 int[] array = new int[size]; //выделение памяти: тип(инт), название и new int[размер массива]. инициализвция рабочей переменной, существующей только внутри цикла. в случае с массивами - это переменная индекса. 
                 for (int i = 0; i < size; i++) // Первый блок может и отсутствовать, НО! его точку с запятой в начале оставляем.
                 {
-                    Console.WriteLine($"Введите элемент массива под индексом {i}");
+                    Console.WriteLine($"Введите элемент массива под индексом {i}: ");
                     array[i] = Convert.ToInt32(Console.ReadLine());                           //второй блок - это логическое условие существования цикла(то что в while пишем обычно. 
                 }                           // Третий блок - это процесс направленный на изменение рабочей пременной. Блоки можно расширять через запятую.
                 return array;
@@ -178,7 +178,7 @@ namespace SeminarsCsharp.Homework
             int size1 = Convert.ToInt32(Console.ReadLine());
             int[] array = EnterNewArray(size1);
             WriteArray(array);
-
+            */
         }
     }
 }

@@ -87,12 +87,12 @@ namespace SeminarsCsharp.Seminars
             int[] EnterNewArray(int size) //, int minValue, int maxValue)
             {
                 
-                int[] array = new int[size]; //выделение памяти: тип(инт), название и new int[размер массива]. инициализвция рабочей переменной, существующей только внутри цикла. в случае с массивами - это переменная индекса. 
-                for (int i = 0; i < size; i++) // Первый блок может и отсутствовать, НО! его точку с запятой в начале оставляем.
+                int[] array = new int[size]; 
+                for (int i = 0; i < size; i++) 
                 {
                     Console.WriteLine($"Введите элемент массива под индексом {i}");
-                    array[i] = Convert.ToInt32(Console.ReadLine());                           //второй блок - это логическое условие существования цикла(то что в while пишем обычно. 
-                }                           // Третий блок - это процесс направленный на изменение рабочей пременной. Блоки можно расширять через запятую.
+                    array[i] = Convert.ToInt32(Console.ReadLine());     
+                }                           
                 return array;
             }
 
