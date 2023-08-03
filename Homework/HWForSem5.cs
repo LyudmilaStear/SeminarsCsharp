@@ -8,7 +8,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SeminarsCsharp.Homework
 {
-    public static class HWForSem5
+    public static class HWforSem5
     {
         public static void Launch()
         {
