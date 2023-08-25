@@ -147,7 +147,8 @@ namespace SeminarsCsharp.Homework
             Console.WriteLine(num1_2);
             Console.WriteLine(num2_2);
             */
-
+            //решение 1
+            /*
             string Transform10Into2(int num)
             {
                 string numIn2 = String.Empty;
@@ -155,7 +156,6 @@ namespace SeminarsCsharp.Homework
                 {
                     int dig = num % 2;
                     num = num / 2;
-                    //numIn2 = Convert.ToString(dig) + numIn2; // и на этом все
                     numIn2 = numIn2 + Convert.ToString(dig);
                 }
                 
@@ -181,6 +181,70 @@ namespace SeminarsCsharp.Homework
             Console.WriteLine("Введите число для перевода в двоичную систему ");
             int userNum = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Transform10Into2(userNum));
+            */
+
+            // решение 2
+
+            /*
+            string Transform10Into2(int num)
+            {
+                string numIn2 = String.Empty;
+                while (num > 0)
+                {
+                    int dig = num % 2;
+                    num = num / 2;
+                    numIn2 = Convert.ToString(dig) + numIn2;
+                }
+
+
+                return numIn2;
+            }
+
+            Console.WriteLine("Введите число для перевода в двоичную систему ");
+            int userNum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Transform10Into2(userNum));
+            */
+
+            // решение 3.
+
+            /*
+            string Transform10Into2(int num)
+            {
+                string numIn2 = String.Empty;
+                while (num > 0)
+                {
+                    int dig = num % 2;
+                    num = num / 2;
+                    numIn2 = numIn2 + Convert.ToString(dig);
+                }
+
+                Console.WriteLine(numIn2);
+
+                string revNumIn2 = String.Empty;
+
+                //int oldNum = Convert.ToInt32(numIn2);
+
+                for (int i = numIn2.Length - 1; i >= 0; i--)
+                {
+                    char rightDig = numIn2[i];
+                    revNumIn2 = revNumIn2 + Convert.ToString(rightDig);
+                }
+                //int i = 0;
+                //while (i < numIn2.Length)
+                //{
+                //    char rightDig = numIn2[numIn2.Length - 1 - i];
+                //    i++;
+
+                //    revNumIn2 = revNumIn2 + Convert.ToString(rightDig);
+                //}
+
+                return revNumIn2;
+            }
+
+            Console.WriteLine("Введите число для перевода в двоичную систему ");
+            int userNum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Transform10Into2(userNum));
+            */
         }
 
     }
