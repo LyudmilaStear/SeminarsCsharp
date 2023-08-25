@@ -156,7 +156,9 @@ namespace SeminarsCsharp.Seminars
 
             //Task4. Напишите программу,
             //которая будет создавать копию заданного массива с помощью поэлементного копирования.
-            int[] CreateRandomArray(int size, int minValue, int maxValue)
+           
+            /*
+             int[] CreateRandomArray(int size, int minValue, int maxValue)
             {
                 int[] array = new int[size];
                 for (int i = 0; i < size; i++)
@@ -202,6 +204,8 @@ namespace SeminarsCsharp.Seminars
             myArray[0] = 0;
             WriteArray(myArray);
             WriteArray(newArray);
+
+            */
         }
     }
 }

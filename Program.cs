@@ -25,13 +25,14 @@ namespace SeminarsCsharp
             //S5p1.Launch();
             //S5p2.Launch();
 
-            S6p1.Launch();
+            //S6p1.Launch();
 
             //HWforSem1.Launch();            
             //HWforSem2.Launch();
             //HWforSem3.Launch();
             //HWforSem4.Launch();
             //HWforSem5.Launch();
+            HWforSem6.Launch();
 
 
 
