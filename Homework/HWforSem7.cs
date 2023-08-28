@@ -188,7 +188,7 @@ namespace SeminarsCsharp.Homework
                     {
                         sum += array[i, j];                        
                     }                     
-                    double average = sum / (array.GetLength(1));
+                    double average = sum / (array.GetLength(0));
                     Console.WriteLine($"{average} is averege of {j} colomn");
                 }
                 
