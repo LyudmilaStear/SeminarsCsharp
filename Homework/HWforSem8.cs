@@ -215,8 +215,77 @@ namespace SeminarsCsharp.Homework
             //            18 20
             //15 18
 
+            // не работает
 
+            int[,] CreateRandom2dArr(int row, int col, int minVal, int maxVal)
+            {
+                int[,] arr2d = new int[row, col];
+                for (int i = 0; i < arr2d.GetLength(0); i++)
+                    for (int y = 0; y < arr2d.GetLength(1); y++)
+                        arr2d[i, y] = new Random().Next(minVal, maxVal);
+                return arr2d;
+            }
 
+            void Show2dArray(int[,] array)
+            {
+                for (int i = 0; i < array.GetLength(0); i++)
+                {
+                    for (int y = 0; y < array.GetLength(1); y++)
+                    {
+                        Console.Write(array[i, y] + " ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+
+            int[,] MatrixMult(int[,] matrixA, int[,] matrixB)
+            {
+                int rowsA = matrixA.GetLength(0);
+                int columnsB = matrixB.GetLength(1);
+                int[,] result = new int[rowsA, columnsB];
+                if (matrixA.GetLength(1) == matrixB.GetLength(0))
+                {
+                    for (int i = 0; i < rowsA; i++)
+                    {
+                        for (int j = 0; j < columnsB; j++)
+                        {
+                            for (int n = 0; n < matrixA.GetLength(1); n++)
+                            {
+                                result[i, j] += matrixA[i, n] * matrixB[n, j];
+                            }
+                        }
+                    }
+                }
+                return result;
+            }
+
+            Console.Write("Enter a row quantity of the first array: ");
+            int row = Convert.ToInt32(Console.ReadLine());  //int row = Parse
+            Console.Write("Enter a coloumn quantity of the first array: ");
+            int col = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the min possible value of the first array: ");
+            int minValue = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the max possible value of the first array: ");
+            int maxValue = Convert.ToInt32(Console.ReadLine());
+
+            int[,] myFirstArray = CreateRandom2dArr(row, col, minValue, maxValue);
+            Show2dArray(myFirstArray);
+
+            Console.Write("Enter a row quantity of the second array: ");
+            int row2 = Convert.ToInt32(Console.ReadLine());  //int row = Parse
+            Console.Write("Enter a coloumn quantity of the second array: ");
+            int col2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the min possible value of the second array: ");
+            int minValue2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the max possible value of the second array: ");
+            int maxValue2 = Convert.ToInt32(Console.ReadLine());
+
+            int[,] mySecondArray = CreateRandom2dArr(row2, col2, minValue2, maxValue2);
+            Show2dArray(mySecondArray);
+
+            int[,] matrixMult = MatrixMult(myFirstArray, mySecondArray);
+            Show2dArray(matrixMult);
 
             //Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел.Напишите программу,
             //которая будет построчно выводить массив, добавляя индексы каждого элемента.
@@ -600,7 +669,7 @@ namespace SeminarsCsharp.Homework
             Show2dArray(arr);
             */
 
-         
+
             //еще вариант одноклассника
             /*
             int[,] CreateSpiral2dArray()

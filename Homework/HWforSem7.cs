@@ -17,7 +17,7 @@ namespace SeminarsCsharp.Homework
             //8 7,8 - 7,1 9
 
             /*
-            double[,] CreateRandom2dArr(int row, int col, double minVal, double maxVal)
+            double[,] CreateRandom2dArr(int row, int col, int minVal, int maxVal)
             {
                 double[,] arr2d = new double[row, col];
 
@@ -25,7 +25,8 @@ namespace SeminarsCsharp.Homework
 
                 for (int i = 0; i < arr2d.GetLength(0); i++)
                     for (int j = 0; j < arr2d.GetLength(1); j++)
-                        arr2d[i, j] = Math.Round(minVal + (maxVal - minVal) * random.NextDouble(), 2);
+                        //arr2d[i, j] = Math.Round(minVal + (maxVal - minVal) * random.NextDouble(), 2); //
+                        arr2d[i, j] = new Random().Next(minVal, maxVal) + random.NextDouble();
                 return arr2d;
             }
 
@@ -47,9 +48,9 @@ namespace SeminarsCsharp.Homework
             Console.Write("Enter a coloumn quantity of an array: ");
             int col = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the min possible value: ");
-            double minValue = Convert.ToInt32(Console.ReadLine());
+            int minValue = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the max possible value: ");
-            double maxValue = Convert.ToInt32(Console.ReadLine());
+            int maxValue = Convert.ToInt32(Console.ReadLine());
 
             double[,] myArray = CreateRandom2dArr(row, col, minValue, maxValue);
             Show2dArray(myArray);
@@ -140,8 +141,31 @@ namespace SeminarsCsharp.Homework
 
 
             /*
-             double AveregeColomns(int[,] array)
+            int[,] CreateRandom2dArr(int row, int col, int minVal, int maxVal)
             {
+                int[,] arr2d = new int[row, col];
+                for (int i = 0; i < arr2d.GetLength(0); i++)
+                    for (int j = 0; j < arr2d.GetLength(1); j++)
+                        arr2d[i, j] = new Random().Next(minVal, maxVal);
+                return arr2d;
+            }
+
+            void Show2dArray(int[,] array)
+            {
+                for (int i = 0; i < array.GetLength(0); i++)
+                {
+                    for (int j = 0; j < array.GetLength(1); j++)
+                    {
+                        Console.Write(array[i, j] + " ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+
+            double AveregeColomns(int[,] array)
+            {
+                double average;
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
                     int sum = 0;
@@ -149,13 +173,33 @@ namespace SeminarsCsharp.Homework
                     {
                         sum += array[i, j];
                     }
-                    double average = sum / (array.GetLength(1));
+                    average = sum / (array.GetLength(1));
                     return average;
                 }
-
+                
             }
+
+
+
+
+
+            Console.Write("Enter a row quantity of an array: ");
+            int row = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter a coloumn quantity of an array: ");
+            int col = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the min possible value: ");
+            int minValue = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the max possible value: ");
+            int maxValue = Convert.ToInt32(Console.ReadLine());
+
+            int[,] myArray = CreateRandom2dArr(row, col, minValue, maxValue);
+            Show2dArray(myArray);
+
+            Console.WriteLine(AveregeColomns(myArray));
             */
 
+            //void solution
+            /*
             int[,] CreateRandom2dArr(int row, int col, int minVal, int maxVal)
             {
                 int[,] arr2d = new int[row, col];
@@ -207,8 +251,8 @@ namespace SeminarsCsharp.Homework
             Show2dArray(myArray);
 
             AveregeColomns(myArray); 
-           
-            
+           */
+
 
 
 
