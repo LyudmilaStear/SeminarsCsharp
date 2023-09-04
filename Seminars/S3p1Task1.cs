@@ -111,8 +111,7 @@ namespace SeminarsCsharp.Seminars
             // Task 4. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
             // результат буддет double. Вводные данные тоже можно будет сдделать double. 
 
-            ///что не так работает
-            ///
+            
              double DistanceLine(double x1, double y1, double x2, double y2)
             {
                 return Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));

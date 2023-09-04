@@ -33,6 +33,9 @@ namespace SeminarsCsharp
             //S8p1.Launch();
             //S8p2.Launch();
 
+            
+            S9p1.Launch();
+
             //HWforSem1.Launch();            
             //HWforSem2.Launch();
             //HWforSem3.Launch();
@@ -40,8 +43,8 @@ namespace SeminarsCsharp
             //HWforSem5.Launch();
             //HWforSem6.Launch();
             //HWforSem7.Launch();
-            HWforSem8.Launch();
-
+            //HWforSem8.Launch();
+            //HWForSem8Task62.Launch();
 
 
             //Serg1.Launch();
